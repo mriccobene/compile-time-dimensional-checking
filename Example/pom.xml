@@ -12,7 +12,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- These properties will be set by the Maven Dependency plugin -->
-    <annotatedJdk>${org.checkerframework:jdk8:jar}</annotatedJdk>
+    <!--<annotatedJdk>${org.checkerframework:jdk8:jar}</annotatedJdk>-->
     <checkerFrameworkVersion>2.2.1</checkerFrameworkVersion>
      <!-- Uncomment to use the Type Annotations compiler. -->
      <!--<typeAnnotationsJavac>${org.checkerframework:compiler:jar}</typeAnnotationsJavac>-->

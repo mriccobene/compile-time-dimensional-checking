@@ -2,10 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
+      <profile name="Annotation profile for CheckerFrameworkExtension" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processor name="org.checkerframework.checker.nullness.NullnessChecker" />
+        <processor name="org.checkerframework.checker.units.UnitsChecker" />
         <module name="CheckerFrameworkExtension" />
       </profile>
     </annotationProcessing>

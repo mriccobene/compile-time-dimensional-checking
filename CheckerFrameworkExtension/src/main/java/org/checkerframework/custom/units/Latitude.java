@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@SubtypeOf({Angle.class})                                       // todo: Angle o degree?
+@SubtypeOf({Angle.class})                                       // Angle or degree
 @Target({ElementType.TYPE_USE, ElementType.TYPE_PARAMETER})
 public @interface Latitude {
 }

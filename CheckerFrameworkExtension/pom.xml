@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.checkerframework</groupId>
-    <artifactId>custom</artifactId>
+    <artifactId>checker-extension</artifactId>
     <version>1.1</version>
     <packaging>jar</packaging>
 
@@ -26,8 +26,6 @@
         <dependency>
             <groupId>org.checkerframework</groupId>
             <artifactId>checker-qual</artifactId>
-            <!-- Use checker-qual7 if targeting Java 7 -->
-            <!-- <artifactId>checker-qual7</artifactId> -->
             <version>${checkerFrameworkVersion}</version>
         </dependency>
         <dependency>
@@ -36,19 +34,20 @@
             <version>${checkerFrameworkVersion}</version>
         </dependency>
         <!-- The Type Annotations compiler. Uncomment if using annotations in comments. -->
-        <!--<dependency>
+        <!--
+        <dependency>
           <groupId>org.checkerframework</groupId>
           <artifactId>compiler</artifactId>
           <version>${checkerFrameworkVersion}</version>
-        </dependency>-->
+        </dependency>
+        -->
+
         <!-- annotations from the Checker Framework: nullness, interning, locking, ... -->
         <dependency>
             <groupId>org.checkerframework</groupId>
             <artifactId>jdk8</artifactId>
             <version>${checkerFrameworkVersion}</version>
         </dependency>
-
-        <!-- Altre dipendenze -->
 
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -92,8 +91,8 @@
                     <showWarnings>true</showWarnings>
                     <annotationProcessors>
                         <!-- Add all the checkers you want to enable here -->
-                        <!--<annotationProcessor>org.checkerframework.checker.nullness.NullnessChecker</annotationProcessor>-->
-                        <!--<annotationProcessor>org.checkerframework.checker.units.UnitsChecker</annotationProcessor>-->
+                        <annotationProcessor>org.checkerframework.checker.nullness.NullnessChecker</annotationProcessor>
+                        <annotationProcessor>org.checkerframework.checker.units.UnitsChecker</annotationProcessor>
                     </annotationProcessors>
                     <compilerArgs>
                         <!-- location of the annotated JDK, which comes from a Maven dependency -->
