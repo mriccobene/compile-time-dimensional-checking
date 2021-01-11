@@ -1,14 +1,6 @@
 
 # Compile-time unit dimension checking - Example
 
-If you run:
-
-```
-mvn compile
-```
-
-the build for this project should fail with some warnings on incorrect unit of measure usage.
-
 If you have a function that process geo referenced data, it is easy to inadvertently exchange arguments confusing latitude for longitude: in Java they are of type double, defining a custom type we incur in a high friction with the rest of the language.
 
 ```java
