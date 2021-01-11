@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ChekerCustomUnits:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/ChekerCustomUnits_jar</output-path>
+    <root id="archive" name="ChekerCustomUnits.jar">
+      <element id="module-output" name="ChekerCustomUnits" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../ChekerCustomUnits/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

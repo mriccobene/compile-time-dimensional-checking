@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for MavenExample" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="lint" value="" />
+        <option name="units" value="org.checkerframework.example.Latitude" />
+        <option name="unitsDirs" value="/full/path/to/myProject/bin:/full/path/to/myLibrary/bin" />
+        <option name="warns" value="" />
+        <processor name="org.checkerframework.checker.nullness.NullnessChecker" />
+        <processor name="org.checkerframework.checker.units.UnitsChecker" />
+        <module name="MavenExample" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ChekerCustomUnits" />
+      </profile>
+      <profile name="Annotation profile for CheckerExample" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <option name="lint" value="" />
+        <option name="units" value="org.checkerframework.custom.units.Latitude,org.checkerframework.custom.units.Longitude" />
+        <option name="warns" value="" />
+        <processor name="org.checkerframework.checker.nullness.NullnessChecker" />
+        <processor name="org.checkerframework.checker.units.UnitsChecker" />
+        <module name="CheckerExample" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CheckerExample" target="1.8" />
+      <module name="ChekerCustomUnits" target="1.8" />
+      <module name="MavenExample" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CheckerExample" options="-Awarns -Aunits=org.checkerframework.custom.units.Latitude,org.checkerframework.custom.units.Longitude -Alint" />
+    </option>
+  </component>
+</project>
